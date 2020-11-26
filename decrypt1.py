@@ -12,6 +12,10 @@ w, h = im.size
 
 y0 = 1
 x0 = 1.0000001
+"""
+Flattening to linear using one loop
+
+"""
 for i in range(0, h * w):
     x = 1 - 1.4 * pow(x0, 2) + y0
     y = 0.3 * x0
